@@ -99,6 +99,12 @@
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
         <arguments />
         <gpg.keyname>67893CC4</gpg.keyname>
+
+	<sonar.projectKey>UnimibSoftEngCourse1920_sonarqube-exercise-AuPath</sonar.projectKey>
+	<sonar.organization>unimibsoftengcourse1920</sonar.organization>
+	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	<sonar.login>bbafbea5b1b9bf0702df18668ac749ed915fe140</sonar.login>
+
     </properties>
 
     <dependencies>
