@@ -604,11 +604,8 @@ public class Assert {
         if (Double.compare(d1, d2) == 0) {
             return false;
         }
-        if ((Math.abs(d1 - d2) <= delta)) {
-            return false;
-        }
 
-        return true;
+	return (Math.abs(d1 - d2) <= delta);
     }
 
     private static boolean floatIsDifferent(float f1, float f2, float delta) {
