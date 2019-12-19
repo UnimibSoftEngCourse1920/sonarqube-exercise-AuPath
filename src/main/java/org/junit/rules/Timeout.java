@@ -38,7 +38,7 @@ import java.util.concurrent.TimeUnit;
  * @since 4.7
  */
 public class Timeout implements TestRule {
-    private final long timeout;
+    private final long timeoutAmount;
     private final TimeUnit timeUnit;
     private final boolean lookForStuckThread;
 
