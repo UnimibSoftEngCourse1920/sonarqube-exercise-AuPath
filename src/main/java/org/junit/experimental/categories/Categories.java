@@ -224,12 +224,10 @@ public class Categories extends Suite {
                 return included.isEmpty();
             }
 
-            if (!excluded.isEmpty()) {
-                if (excludedAny) {
-                    if (matchesAnyParentCategories(childCategories, excluded)) {
-                        return false;
-                    }
-                } else {
+            if (!excluded.isEmpty() && excludedAny && matchesAnyParentCategories(childCategories,excluded) {
+		    return false;
+		}
+		else {
                     if (matchesAllParentCategories(childCategories, excluded)) {
                         return false;
                     }
