@@ -116,7 +116,7 @@ public class Assert {
         if (Double.compare(expected, actual) == 0) {
             return;
         }
-        if (!(Math.abs(expected - actual) <= delta)) {
+        if ((Math.abs(expected - actual) > delta)) {
             failNotEquals(message, new Double(expected), new Double(actual));
         }
     }
